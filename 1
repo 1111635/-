@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美妆教程</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 24px;
+            color: #fff;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin: 10px;
+        }
+        .btn:hover {
+            background-color: #ff1493;
+        }
+    </style>
+    <script>
+        function showAlert() {
+            alert("正在检测...");
+            setTimeout(() => { alert("皮肤检测完成！"); }, 2000);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <button class="btn" onclick="location.href='skincare.html'">美妆教程</button>
+        <button class="btn" onclick="showAlert()">皮肤检测</button>
+    </div>
+</body>
+</html>
